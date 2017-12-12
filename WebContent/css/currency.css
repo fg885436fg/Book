@@ -1,0 +1,33 @@
+.header {
+  background: #f8f8f8;
+  margin-bottom: 20px;
+}
+.header > div {
+  width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.header a img {
+  height: 60px;
+}
+.header .input-group {
+  margin-top: 12px;
+}
+.header .sign-in {
+  text-decoration: none;
+  color: #333;
+  margin-top: 12px;
+  padding: 8px 5px;
+  display: inline-block;
+}
+a.return-top {
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  border-radius: 50%;
+  background: pink;
+  padding: 6px;
+  text-decoration: none;
+}

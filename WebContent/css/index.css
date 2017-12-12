@@ -1,0 +1,539 @@
+body {
+  font: 14px 'Microsoft Yahei', sans-serif;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+input {
+  border: none;
+}
+header,
+nav,
+#banner,
+#banner-strip,
+#classify,
+#container,
+section,
+#link {
+  width: 1180px;
+  margin: 0 auto;
+}
+header:after,
+nav:after,
+#banner:after,
+#classify:after,
+#container:after,
+section:after,
+ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul > li {
+  float: left;
+}
+/*页头*/
+body > div:first-child {
+  border-bottom: 1px solid #ddd;
+}
+header > img {
+  height: 125px;
+}
+header > div:last-child {
+	margin: 50px 10px 0px 0px;
+  float: right;
+  height: 50px;
+}
+header > div:last-child > div {
+  float: left;
+  line-height: 50px;
+}
+header > div:last-child > div > input {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #cc92cf;
+  outline: none;
+  padding-left: 5px;
+  border-radius: 6px 0 0 6px;
+}
+header > div:last-child > div > button {
+  margin-left: -5px;
+  width: 50px;
+  height: 34px;
+  border: 1px solid #daf;
+  background: #cc92cf;
+  color: #fff;
+  border-radius: 0 6px 6px 0;
+  outline: none;
+}
+header > div:last-child > ul {
+  float: left;
+  /*width: 300px;
+  height: 50px;*/
+}
+header > div:last-child > ul > li:first-child {
+  margin-left: 100px;
+}
+header > div:last-child > ul li {
+  margin-top: 18px;
+  height: 30px !important;
+}
+header > div:last-child > ul > li:nth-child(3) {
+  height: 30px;
+  padding: 0 6px;
+  margin: 18px 6px 0;
+}
+header > div:last-child > ul.active > li {
+  margin-top: 0;
+  line-height: 50px;
+  vertical-align: middle;
+}
+header > div:last-child > ul.active > li:first-child {
+  display: none;
+}
+header > div:last-child > ul.active li:nth-child(2) {
+  margin-top: 5px;
+  margin-left: 50px;
+}
+header > div:last-child > ul.active li:nth-child(2) img {
+  width: 40px;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+header > div:last-child > ul.active li:nth-child(3) {
+  margin-top: 5px ;
+  margin-left: -20px;
+}
+header > div:last-child > ul.active li:last-child {
+  margin-top: 5px;
+}
+nav {
+  margin-top: 15px;
+  text-align: center;
+  border-bottom: 2px solid #cc92cf;
+  -webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 0px 1px 2px;
+	-moz-box-shadow: #666 0px 1px 2px;
+	box-shadow: #666 0px 1px 2px;
+}
+nav li {
+  float: left;
+  font-size: 16px;
+  width: 110px;
+  line-height: 50px;
+}
+nav li a:hover {
+  color: #a0f;
+  position: relative;
+}
+nav li:hover i {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  background: #daf;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav li.active {
+  color: #a0f;
+  position: relative;
+}
+nav li.active i {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background: #daf;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+nav .nav_r{
+  cursor: pointer;
+}
+  /*轮播图+图形*/
+#banner {
+  overflow: hidden;
+  margin-top: 20px;
+}
+#banner div.carousel {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: #666 1px 1px 8px;
+	-moz-box-shadow: #666 1px 1px 8px;
+	box-shadow: #666 1px 1px 8px;
+	width: 875px;
+	height: 410px;
+  float: left;
+}
+#banner .carousel img{
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	width: 875px;
+	height: 410px;
+}
+#banner div.carousel:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#banner aside {
+  float: right;
+  width: 275px;
+}
+#banner aside > div:first-child {
+  margin-bottom: 15px;
+}
+#banner aside > div:first-child h1 {
+  float: left;
+  line-height: 30px;
+  padding-right: 40px;
+  position: relative;
+  padding-bottom: 5px;
+}
+#banner aside > div:first-child h1 i {
+  position: absolute;
+  width: 74px;
+  height: 3px;
+  background: #000;
+  bottom: 0;
+  left: 0;
+}
+#banner aside > div:first-child > span {
+  float: right;
+  display: inline-block;
+  line-height: 33px;
+}
+#banner aside > div:first-child > span img {
+  vertical-align: middle;
+}
+#banner aside > div:first-child:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#banner aside > ul > li {
+  float: none;
+  margin: 12px 0;
+}
+#banner aside > ul > li > span:first-child {
+  font-size: 15px;
+  color: #fff;
+  background: #daf;
+  padding: 2px 6px;
+}
+#banner aside > ul > li > span:nth-child(2) {
+  margin-left: 20px;
+}
+#banner aside > ul > li > span:last-child {
+  float: right;
+}
+#banner aside > ul > li img {
+  display: none;
+}
+#banner aside > ul > li p {
+  display: none;
+}
+#banner aside > ul > li.active {
+  position: relative;
+}
+#banner aside > ul > li.active > span {
+  display: none;
+}
+#banner aside > ul > li.active > span:first-child {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#banner aside > ul > li.active img {
+  display: inline-block;
+}
+#banner aside > ul > li.active > p {
+  display: block;
+  float: right;
+  width: 200px;
+}
+#banner aside > ul > li.active > p > span {
+  display: block;
+  color: #aaa;
+}
+#banner-strip {
+  margin: 20px auto;
+  text-align: center;
+}
+#classify {
+  overflow: hidden;
+}
+#classify > h1 {
+	font-size: 20px;
+  margin: 10px 10px 30px 0px;
+}
+#classify > ul > li {
+  width: 280px;
+  margin-right: 20px;
+}
+#classify > ul > li img {
+  float: left;
+}
+#classify > ul > li > div {
+  float: left;
+  height: 65px;
+  width: 140px;
+  background: #eee;
+  border-radius: 0 5px 0 0;
+}
+#classify > ul > li > div h1 {
+  float: left;
+  position: relative;
+  font-weight: normal;
+}
+#classify > ul > li > div h1 i {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 5px;
+  height: 3px;
+  width: 100%;
+  background: #8a8a8a;
+  display: block;
+}
+#classify > ul > li > div:last-child {
+  border-top: 1px solid #aaa;
+  border-radius: 0 0 5px 0;
+}
+#classify > ul > li > div:last-child h1 {
+  float: right;
+}
+#classify > ul > li > div:last-child h1 i {
+  margin-left: -3px;
+}
+#container {
+  margin-top: 20px;
+}
+#container > section {
+  display: inline-block;
+  width: 875px;
+  margin: 0;
+}
+#container > section > div:first-child {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2px ;
+}
+#container > section > div:first-child h1 {
+  float: left;
+}
+#container > section > div:first-child span {
+  float: right;
+}
+#container > section > div:first-child:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#container > section > ul > li {
+  margin: 20px 10px 0 0;
+  float: left;
+  width: 280px;
+}
+#container > section > ul > li img {
+  float: left;
+}
+#container > section > ul > li > div {
+  float: left;
+  width: 134px;
+  padding-left: 6px;
+}
+#container > section > ul > li > div > h3 {
+  position: relative;
+  float: left;
+  padding-bottom: 3px;
+}
+#container > section > ul > li > div > h3 i {
+  position: absolute;
+  height: 2px;
+  background: #f00;
+  width: 100%;
+  border-radius: 2px;
+}
+#container > aside {
+  float: right;
+  width: 275px;
+}
+#container > aside > div {
+  padding-bottom: 2.5px;
+  border-bottom: 1px solid #ddd;
+}
+#container > aside > div h1 {
+  float: left;
+}
+#container > aside > div span {
+  float: right;
+}
+#container > aside > div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#container > aside > ul > li {
+  width: 100%;
+  margin: 8px 0;
+}
+#container > aside > ul > li > span:first-child {
+  border-radius: 3px;
+  text-align: center;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  font-size: 15px;
+  background: #daf;
+}
+#container > aside > ul > li > span:nth-child(2) {
+  margin-left: 20px;
+}
+#container > aside > ul > li > span:last-child {
+  float: right;
+}
+#container > aside:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#fix {
+  position: fixed;
+  bottom: 20px;
+  right: 100px;
+  width: 50px;
+}
+#link {
+  margin-top: 30px;
+  border-top: 1px solid #daf;
+  padding: 25px 0;
+  position: relative;
+}
+#link ul > li:first-child {
+  color: #000;
+}
+#link ul > li {
+  color: #666;
+  float: left;
+  padding: 3px 6px;
+}
+#link i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+  height: 30px;
+  background: #a0f;
+}
+/*同好索引*/
+section > ul {
+  display: block;
+}
+section > ul > li {
+  float: left;
+}
+#choose{
+	padding: 20px 0;
+}
+#choose ul > li {
+  width: 70px;
+  border: 1px solid #daf;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 25px;
+  margin: 5px 10px;
+}
+#choose ul .choose-header {
+  border: 0;
+  margin-right: 0;
+}
+#choose ul li:not(:first-child){
+  cursor: pointer;
+}
+#choose ul li:not(:first-child):hover {
+  background: #daf ;
+  color: #fff;
+}
+#choose ul .active {
+  background: #daf ;
+  color: #fff;
+}
+
+/*新增*/
+/*核心内容*/
+.content{
+	padding: 20px 0;
+}
+/*尾部*/
+footer{
+	background-color: #f5f5f5;
+	border-top: 3px solid #cc92cf;
+}
+.container{
+	  position: relative;
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.foot_info{
+	  margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.site_info{
+	  font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 25px;
+}
+.site_info p{
+	  margin: 0;
+    color: #999;
+}
+/*导航*/
+.nav_r{
+	float: right;
+	height: 50px;
+}
+.nav_r img{
+}
+/*全局*/
+a{
+	text-decoration:none;
+}
+#main p{
+	font-size: 14px;
+	text-align: left;
+	margin-left: 20px;
+}
+#main.t{
+	font-weight: 700;
+}
+#main.d{
+	
+}

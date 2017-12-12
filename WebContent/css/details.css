@@ -1,0 +1,116 @@
+.header {
+  background: #f8f8f8;
+  margin-bottom: 20px;
+}
+.header > div {
+  width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.header a img {
+  height: 60px;
+}
+.header .input-group {
+  margin-top: 12px;
+}
+.header .sign-in {
+  text-decoration: none;
+  color: #333;
+  margin-top: 12px;
+  padding: 8px 5px;
+  display: inline-block;
+}
+a.return-top {
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  border-radius: 50%;
+  background: pink;
+  padding: 6px;
+  text-decoration: none;
+}
+body {
+  background: #fdfdfd;
+}
+.label-container span {
+  font-size: 14px;
+}
+.row.margin {
+  margin: 10px 0;
+}
+.star-container p {
+  margin-top: 25px;
+  font-size: 14px;
+}
+.progress-container {
+  padding-top: 10px;
+}
+.progress-container .progress {
+  margin-bottom: 10px;
+}
+.book-details {
+  list-style: none;
+  padding-left: 0;
+}
+.book-details li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#accordion-container .accordion-group {
+  border-radius: 5px;
+  border: 1px solid #337ab7;
+}
+#accordion-container .accordion-heading {
+  font-size: 16px;
+  border-radius: 5px;
+  margin: -1px;
+}
+#accordion-container .accordion-heading a {
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+#accordion-container .accordion-body {
+  padding: 3px 5px;
+}
+.comment-module {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0 10px;
+}
+.comment-module .media {
+  position: relative;
+  overflow: initial;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 3px;
+}
+.comment-module .media .media-middle img {
+  border-radius: 5px;
+}
+.comment-module .media .media-body {
+  padding-top: 6px;
+}
+.comment-module .media > img {
+  width: 23px;
+  position: absolute;
+  top: -6px;
+  right: 17px;
+  transform: rotate(-15deg);
+  z-index: 5;
+}
+.comment-module .comment-content {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+.comment-module .btn-group {
+  width: 100%;
+  padding: 10px 5% 0;
+}
+.comment-module .btn-group .btn {
+  width: 45%;
+}

@@ -1,0 +1,21 @@
+.table {
+	font-family:"微软雅黑";
+	font-size:18px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+
+table.table td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+.oddrowcolor{
+	/* background-color:#d4e3e5; */
+}
+.evenrowcolor{
+	/* background-color:#c3dde0; */
+}

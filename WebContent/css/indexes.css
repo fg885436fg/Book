@@ -1,0 +1,182 @@
+header >a> img {
+    height: 125px;
+}
+section#main>div>ul{
+    padding: 5px;
+    border-top: 1px solid #ddd;
+}
+section#main>div>ul>li{
+    padding-top: 20px;
+    width: 100%;
+    height: 145px;
+    margin: 5px 0 5px 15px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+section#main>div>ul>li>a{
+    float: left;
+}
+section#main>div>ul>li>a>img{
+    width: 102px;
+    height: 136px;
+    border-radius: 5px;
+}
+section#main>div>ul>li>div{
+    float: left;
+    margin-left: 15px;
+}
+section#main>div>ul>li>div>ul{
+    width: 1025px;
+}
+section#main>div>ul>li>div>ul>li{
+    width: 100%;
+}
+section#main>div>ul>li>div>ul>li.title{
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+}
+section#main>div>ul>li>div>ul>li.title span{
+    padding: 2px 5px 3px;
+    border-radius: 3px;
+    color: #fff;
+}
+section#main>div>ul>li>div>ul>li.title span.lily{
+    background-color: #f9c;
+}
+section#main>div>ul>li>div>ul>li.title span.marry{
+    background-color: #0f6;
+}
+section#main>div>ul>li>div>ul>li.title span.other{
+    background-color: #c3f;
+}
+section#main>div>ul>li>div>ul>li.title span.cross-dresser{
+    background-color: #36f;
+}
+section#main>div>ul>li>div>ul>li.title select{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px 3px;
+}
+section#main>div>ul>li>div>ul>li.desc{
+    color: #99a2aa;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding-top: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    line-height: 20px;
+    height: 40px;
+    clear: both;
+    width: 670px;
+    text-overflow: ellipsis;
+}
+section#main>div>ul>li>div>ul>li.title a.title{
+    text-overflow: ellipsis;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+ li.info span,li.tags span{
+    font-size: 13px;
+    line-height: 15px;
+     margin-right: 4px;
+     color: #666;
+     box-sizing: border-box;
+}
+li.info i,li.tags i{
+    margin-right: 3px;
+}
+section#main div.paging p{
+    text-align: center;
+}
+section#main div.paging p input{
+    width: 40px;
+    height: 25px;
+    border: 1px solid #ddd;
+    outline: 0;
+}
+section#main div.paging p a{
+    margin:0 3px;
+}
+
+/*遮罩层*/
+.mask-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 500;
+    background-color: rgba(0,0,0,.2);
+    display: none;
+    transition: all .2s;
+}
+.mask-background>div{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -180px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.mask-background>div>span.times{
+    position: absolute;
+    top: 2px;
+    right: 12px;
+    font-size: 24px;
+}
+.mask-background>div h3{
+    line-height: 40px;
+    font-size: 18px;
+    padding-left: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.mask-background>div div{
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+}
+.mask-background>div div select{
+    padding: 2px;
+    line-height: 22px;
+}
+.mask-background>div div input{
+    line-height: 20px;
+    border: 1px solid #ddd;
+    outline: 0;
+    position: relative;
+    top: -2px;
+    padding-left: 3px;
+}
+.mask-background>div span.close-mask{
+    cursor: pointer;
+}
+.mask-background>div h4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    font-weight: normal;
+}
+.mask-background>div h4 span{
+    width: 50%;
+    line-height: 35px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    transition: all .2s;
+}
+.mask-background>div h4 span:hover{
+    color: #fff;
+    background-color: #c3f;
+}
